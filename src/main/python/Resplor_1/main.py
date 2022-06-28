@@ -467,7 +467,7 @@ class SearchWindow(QDialog):
         return tempdata
 
 
-class Window(QDialog):
+class MainWindow(QDialog):
     '''
     Main Class that defines the main window after program start with all the buttons
     '''
@@ -481,7 +481,7 @@ class Window(QDialog):
     # --------------------------------------------------------
 
     def __init__(self, parent=None):
-        super(Window, self).__init__(parent)
+        super(MainWindow, self).__init__(parent)
         self.setWindowTitle('Resplor v. ' + myVersion)
         self.setWindowFlags(
             self.windowFlags() | QtCore.Qt.WindowMinimizeButtonHint )
@@ -690,7 +690,6 @@ class Window(QDialog):
         dpi = int(self.dpiedit.text())
         print('new dpi value:' , dpi)
 
-
     def open_new_dialog(self, title, origin, model):
         logger.debug('perform function')
 
@@ -762,7 +761,6 @@ class Window(QDialog):
         # if (origin == "opod" and self.opoddialog is not None):
         # self.opoddialog.tableview.setModel(model)
         # self.opoddialog.show()
-
 
     def open_infodialog(self, message):
         logger.debug('perform function')
@@ -3268,7 +3266,7 @@ if __name__ == "__main__":
         # use this when packaging with fbs
         appctxt = ApplicationContext()      
         #app = QApplication(sys.argv)
-        main = Window()
+        main = MainWindow()
         main.show()
         #sys.exit(app.exec_())
         appctxt.app.setStyle("Fusion")
@@ -3277,7 +3275,7 @@ if __name__ == "__main__":
         # use this when not packaging
         #appctxt = ApplicationContext()
         app = QApplication(sys.argv)
-        main = Window()
+        main = MainWindow()
         main.show()
         sys.exit(app.exec_())
         #appctxt.app.setStyle("Fusion")
