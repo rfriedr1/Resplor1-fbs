@@ -1,0 +1,6 @@
+{
+    "app_name": "Resplor_1",
+    "author": "Ronny Friedrich",
+    "main_module": "src/main/python/Resplor_1/main.py",
+    "version": "0.0.1"
+}

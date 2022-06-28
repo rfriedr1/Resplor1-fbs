@@ -1,0 +1,37 @@
+gelernt von:
+build-system.fman.io/manual/
+
+
+Terminal Öffnen:
+
+- venv anlegen : python3 -m venv venv
+- Aktivieren
+
+  win:  call venv\scripts\activate.bat   
+  auf mac: source venv/bin/activate
+
+- pip install fbs PyQt5  -installieren
+- weitere abhängigkeiten installieren -mpl-toolkits mpldatacursor , pandas, numpy, matplotlib ,xlrd , xlsxwriter
+
+- danach neues Projekt anlegen
+
+  fbs startproject 
+
+- das legt nun die erforderlichen ordner an
+
+- gewünschte main.py in src/main/python 
+- .ui files oder sonstige resourcen direkt neben den venv ordner bzw. die python.exe (glaube ich,kann auch sein,dass
+   sie in /main müssen)
+
+- RUN
+mit 'fbs run' kann man dann testen
+
+- FREEZE
+'fbs freeze' legt die exe im target folder an.
+die data1.db muss dann noch manuell in den target folder verschoben werden
+
+ACHTUNG. beim import von eigenen modulen niemals ein leeres __init__.py in den Ordnern verwenden sonst
+wird nach dem freeze das module nicht gefunden!!!!!
+
+- CLEAN
+'fbs clean' entfernt den target folder

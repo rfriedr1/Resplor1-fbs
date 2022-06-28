@@ -1,0 +1,10 @@
+# In order to create a requirements file of the current virtual environment:
+    pip freeze > base.txt
+
+then place this file in requirements/
+base.txt is the reuqierments file for all OSs
+if there are special requirements for differente OSs call them "windows.txt" or "mac.txt"
+check out: https://build-system.fman.io/manual/#declaring-dependencies
+
+# installing all the requirements back into a virtual environment:
+    pip install -r base.txt

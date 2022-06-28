@@ -1,0 +1,9 @@
+ pyinstaller --noconsole plotggg.py --onefile  --paths=C:\Users\gyseghem\resplor\plotggg.py 
+
+
+new way:
+im anacondaverz.:
+call venv\Scripts\activate.bat
+
+
+siehe   https://build-system.fman.io/pyqt-exe-creation/

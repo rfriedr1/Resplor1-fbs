@@ -1,0 +1,17 @@
+Do all of this in Visual studio code terminal
+
+# create a virtual environment
+    python -m venv venv
+
+# now VSC should recognize the venv and ask wehther or not one wants to use it
+
+# activating venv
+- open new terminal (ctrl-shift-ö): VSC should pickup venv automatically
+- other wise go to command terminal and use:
+    ## On Mac/Linux:
+        source venv/bin/activate
+    ## On Windows:
+        call venv\scripts\activate.bat
+
+# deactivating
+    deactivate
