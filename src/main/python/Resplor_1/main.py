@@ -658,7 +658,7 @@ class Window(QDialog):
     def optiontab(self):
         logger.debug('perform function')
         self.dialog = QDialog()
-        self.dialog.setStyleSheet("background-color:lightyellow;")
+        # self.dialog.setStyleSheet("background-color:lightyellow;")
         self.dialog.setWindowTitle('Options')
         self.layout = QVBoxLayout(self.dialog)
         self.Hlayout = QHBoxLayout()
@@ -1776,7 +1776,7 @@ class StandardsFrame(object):
         mainwindow.filenamebox.addItems(mainwindow.items)
 
         mainwindow.figure = plt.figure()
-        mainwindow.figure.set_facecolor("lightyellow")
+        # mainwindow.figure.set_facecolor("lightyellow")
 
         mainwindow.hbox.addWidget(mainwindow.filenamebox)
         mainwindow.vbox.addLayout(mainwindow.hbox)
@@ -2479,7 +2479,7 @@ class GroupBox(QGroupBox):
         if prediff2 > 0:
             diff2 = '+' + str(prediff2)
 
-        self.figure.set_facecolor("lightyellow")
+        #self.figure.set_facecolor("lightyellow")
         if not self.name == 'IAEA CH6' and not self.name == 'IAEA CH7':
             if values[1] > 0.3:
                 self.figure.set_facecolor("red")
@@ -2835,7 +2835,7 @@ class MyCanvas(FigureCanvas):
     def __init__(self, parent=None, width=8, height=4, dpi=dpi):
         logger.debug('perform function')
         self.fig = plt.figure(figsize=(width, height), dpi=dpi)
-        self.fig.set_facecolor("lightyellow")
+        #self.fig.set_facecolor("lightyellow")
         plt.style.use('seaborn-darkgrid')
 
         self.axes = self.fig.add_subplot(111)
